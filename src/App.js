@@ -1,10 +1,9 @@
-import ProgressBar from './components/ProgressBar'
+import Timer from './components/Timer'
 
 function App() {
   return (
     <div className='App'>
-      <h3 className='heading'>Progress Bar</h3>
-      <ProgressBar />
+      <Timer />
     </div>
   )
 }
