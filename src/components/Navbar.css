@@ -1,26 +1,3 @@
-/* // Create a navbar with a brand name in white saying Navbar, a link to Home in white as if it is active, a link to Features, Pricing and About in light gray. The brand and the links should be left aligned on a row and after a space, there should be an input for search and a button for search with a radius corner of 20px that has no fill just a border in a cyan color, those should be right aligned on the same row. The navbar should be black. React js
-
-import React from 'react';
-import './Navbar.css';
-
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <div className="navbar-brand">Navbar</div>
-      <div className="navbar-links">
-        <a href="#" className="navbar-link active">Home</a>
-        <a href="#" className="navbar-link">Features</a>
-        <a href="#" className="navbar-link">Pricing</a>
-        <a href="#" className="navbar-link">About</a>
-      </div>
-      <div className="navbar-search">
-        <input type="text" className="navbar-input" placeholder="Search" />
-        <button className="navbar-button"></button>
-      </div>
-    </nav>
-  );
-} */
-
 .navbar {
   display: flex;
   justify-content: space-between;

@@ -11,7 +11,7 @@ import refreshIcon from '../assets/icons/refresh.svg'
 
 import './PasswordGenerator.css'
 
-const PasswordGenerator = () => {
+function PasswordGenerator() {
   const [passwordLength, setPasswordLength] = useState(10)
   const [password, setPassword] = useState('B9QI4PDBYY')
   const [includeUppercase, setIncludeUppercase] = useState(true)
@@ -21,7 +21,6 @@ const PasswordGenerator = () => {
 
   const onChangePasswordLength = (value) => {
     setPasswordLength(value)
-    generatePassword(value) // Regenerate password on length change
   }
 
   const generatePassword = (length) => {
@@ -36,7 +35,7 @@ const PasswordGenerator = () => {
     if (includeNumbers) characterPool += numbers
     if (includeSpecialChars) characterPool += specialChars
 
-    if (characterPool.length === 0) return // No character types selected
+    if (characterPool.length === 0) return
 
     let generatedPassword = ''
     for (let i = 0; i < length; i++) {
@@ -52,7 +51,7 @@ const PasswordGenerator = () => {
   }
 
   useEffect(() => {
-    generatePassword(passwordLength) // Generate initial password
+    generatePassword(passwordLength)
   }, [passwordLength])
 
   return (

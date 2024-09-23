@@ -1,6 +1,6 @@
 import './Navbar.css';
 
-const Navbar = ({ isReversed }) => {
+function Navbar ({ isReversed }) {
 
   return (
     <nav className="navbar">

@@ -1,13 +1,13 @@
 import { useState } from 'react'
 
-const Form = () => {
+function Form() {
   const [formData, setFormData] = useState({
     username: '',
     fullname: '',
     age: '',
   })
   
-  const [submittedData, setSubmittedData] = useState(null) // Para guardar los datos enviados
+  const [submittedData, setSubmittedData] = useState(null)
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -18,7 +18,7 @@ const Form = () => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault() // Evita la recarga de la página
+    e.preventDefault()
 
     const treatedData = {
       ...formData,
@@ -26,8 +26,8 @@ const Form = () => {
       fullname: formData.fullname.toUpperCase(),
     }
 
-    setSubmittedData(treatedData) // Guarda la información tratada para mostrarla debajo del formulario
-    alert(JSON.stringify(treatedData, null, 2)) // Muestra la información en JSON
+    setSubmittedData(treatedData) 
+    alert(JSON.stringify(treatedData, null, 2))
   }
 
   return (
