@@ -38,18 +38,39 @@ function Timer() {
       <button
         onClick={startTimer}
         disabled={isRunning}
-        style={{ marginRight: '10px' }}
+        style={{
+          backgroundColor: 'green',
+          border: 'none',
+          marginRight: '10px',
+          padding: '10px',
+        }}
       >
         Start
       </button>
+
       <button
         onClick={stopTimer}
         disabled={!isRunning}
-        style={{ marginRight: '10px' }}
+        style={{
+          backgroundColor: 'red',
+          border: 'none',
+          marginRight: '10px',
+          padding: '10px',
+        }}
       >
         Stop
       </button>
-      <button onClick={resetTimer}>Reset</button>
+      <button
+        onClick={resetTimer}
+        style={{
+          backgroundColor: 'yellow',
+          border: 'none',
+          marginRight: '10px',
+          padding: '10px',
+        }}
+      >
+        Reset
+      </button>
     </div>
   )
 }

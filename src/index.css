@@ -1,6 +1,6 @@
 * {
   min-width: 0;
-  font: inherit;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 *, *::before, *::after {
